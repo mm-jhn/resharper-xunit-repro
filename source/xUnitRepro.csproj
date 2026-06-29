@@ -22,10 +22,6 @@
 		<PackageReference Include="xunit.v3.mtp-v2" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <ProjectReference Include="..\lib2\lib2.csproj" />
-	</ItemGroup>
-
 	<ItemGroup Label="Implicit usings">
 		<Using Include="Xunit" />
 	</ItemGroup>
