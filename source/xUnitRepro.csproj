@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<IsTestProject>true</IsTestProject>
+		<IsPackable>false</IsPackable>
+		<OutputType>Exe</OutputType> <!-- Important for MTP -->
+		<GenerateDocumentationFile>false</GenerateDocumentationFile>
+		<RootNamespace>AcmeInc.Product.UnitTests</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup Label="Test dependencies">
+		<PackageReference Include="Microsoft.NET.Test.Sdk" />
+		<PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" />
+		<PackageReference Include="Microsoft.Testing.Extensions.TrxReport" />
+		<PackageReference Include="xunit.analyzers">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="xunit.v3.mtp-v2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\lib2\lib2.csproj" />
+	</ItemGroup>
+
+	<ItemGroup Label="Implicit usings">
+		<Using Include="Xunit" />
+	</ItemGroup>
+
+</Project>

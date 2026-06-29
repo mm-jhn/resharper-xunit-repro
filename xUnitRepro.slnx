@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="lib2/lib2.csproj" />
+  <Project Path="source/xUnitRepro.csproj" />
+</Solution>
